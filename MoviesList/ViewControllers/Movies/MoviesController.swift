@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SDWebImage
 
 class MoviesController: BaseController {
     //MARK: - Properties
@@ -21,7 +20,7 @@ class MoviesController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Movies"
+        title = Strings.Movies.localized
         
         setTableView()
         
@@ -57,7 +56,6 @@ extension MoviesController {
         }
         failureBlock = { error in
             self.tableView.endRefreshing()
-            self.adapter.fetchMore = false
             
             // If there is no record, show empty message
             if self.adapter.modelsArray.isEmpty {

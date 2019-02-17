@@ -12,18 +12,18 @@ class MovieCell: UITableViewCell {
     //MARK:- Properties
     static let identifier = "MovieCell"
     
-    @IBOutlet var mContainerView: UIView!
+    @IBOutlet var containerView: UIView!
     
-    @IBOutlet var mTitleLabel: UILabel!
-    @IBOutlet var mDescLabel: UILabel!
-    @IBOutlet var mDirectorLabel: UILabel!
-    @IBOutlet var mProducerLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var descLabel: UILabel!
+    @IBOutlet var directorLabel: UILabel!
+    @IBOutlet var producerLabel: UILabel!
     
     //MARK:- Cell Methods
     override func awakeFromNib() {  
         super.awakeFromNib()
         
-        mContainerView.layer.addShadow(radius: 10)
+        containerView.layer.addShadow(radius: 10)
     }
 }
  

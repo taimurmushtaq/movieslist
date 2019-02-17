@@ -38,6 +38,7 @@ class BaseController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+        // For handling issues created by SafeArea in older versions
         if #available(iOS 11.0, *) { }
         else {
             topConstraint?.constant = topLayoutGuide.length

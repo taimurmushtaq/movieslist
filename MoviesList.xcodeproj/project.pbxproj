@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A0A97292162111E0090987E /* BaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A97282162111E0090987E /* BaseNavController.swift */; };
-		4A0A972B216213A00090987E /* PixabayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A972A216213A00090987E /* PixabayModel.swift */; };
+		4A0A972B216213A00090987E /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A972A216213A00090987E /* MovieModel.swift */; };
 		4A0A9736216228930090987E /* MoviesAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A9730216228930090987E /* MoviesAdapter.swift */; };
 		4A0A9737216228930090987E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0A9732216228930090987E /* MovieCell.swift */; };
 		4A0A9738216228930090987E /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0A9733216228930090987E /* MovieCell.xib */; };
@@ -23,9 +23,7 @@
 		4A530BB92114B4070049D41B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A530ACD2114B4060049D41B /* Localizable.strings */; };
 		4A530BBA2114B4070049D41B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A530AD12114B4060049D41B /* Constants.swift */; };
 		4A530BBC2114B4070049D41B /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A530AD32114B4060049D41B /* ErrorMessage.swift */; };
-		4A530BBD2114B4070049D41B /* FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A530AD42114B4060049D41B /* FontName.swift */; };
 		4A530BC02114B4070049D41B /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A530AD72114B4060049D41B /* Strings.swift */; };
-		4A530BCD2114B4070049D41B /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A530AE52114B4060049D41B /* UIColorExt.swift */; };
 		4A530BD32114B4070049D41B /* UITableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A530AEB2114B4060049D41B /* UITableViewExt.swift */; };
 		4A530BD72114B4070049D41B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A530AF02114B4070049D41B /* Logger.swift */; };
 		4A530BD82114B4070049D41B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A530AF12114B4070049D41B /* Utility.swift */; };
@@ -50,10 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19798A550705479AE20914FA /* Pods-Pixabay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixabay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pixabay/Pods-Pixabay.debug.xcconfig"; sourceTree = "<group>"; };
-		23BB0D5CC018B83735013715 /* Pods_Pixabay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixabay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0A97282162111E0090987E /* BaseNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavController.swift; sourceTree = "<group>"; };
-		4A0A972A216213A00090987E /* PixabayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayModel.swift; sourceTree = "<group>"; };
+		4A0A972A216213A00090987E /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		4A0A9730216228930090987E /* MoviesAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesAdapter.swift; sourceTree = "<group>"; };
 		4A0A9732216228930090987E /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		4A0A9733216228930090987E /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
@@ -72,9 +68,7 @@
 		4A530ACF2114B4060049D41B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4A530AD12114B4060049D41B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A530AD32114B4060049D41B /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
-		4A530AD42114B4060049D41B /* FontName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontName.swift; sourceTree = "<group>"; };
 		4A530AD72114B4060049D41B /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		4A530AE52114B4060049D41B /* UIColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		4A530AEB2114B4060049D41B /* UITableViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExt.swift; sourceTree = "<group>"; };
 		4A530AF02114B4070049D41B /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		4A530AF12114B4070049D41B /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -99,7 +93,6 @@
 		65589E1B976A525948019A1E /* Pods-MoviesList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesList.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesList/Pods-MoviesList.release.xcconfig"; sourceTree = "<group>"; };
 		C26B21A5FEA75C5A6AFD2D7D /* Pods-MoviesList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesList/Pods-MoviesList.debug.xcconfig"; sourceTree = "<group>"; };
 		D2782AB4F69662BB68B32570 /* Pods_MoviesList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC79B9F34A8ACE09AA4CE911 /* Pods-Pixabay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixabay.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pixabay/Pods-Pixabay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +110,6 @@
 		3D9D4A0FAACAD9D820B75127 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				19798A550705479AE20914FA /* Pods-Pixabay.debug.xcconfig */,
-				DC79B9F34A8ACE09AA4CE911 /* Pods-Pixabay.release.xcconfig */,
 				C26B21A5FEA75C5A6AFD2D7D /* Pods-MoviesList.debug.xcconfig */,
 				65589E1B976A525948019A1E /* Pods-MoviesList.release.xcconfig */,
 			);
@@ -192,7 +183,7 @@
 		4A5309AB2114B4060049D41B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4A0A972A216213A00090987E /* PixabayModel.swift */,
+				4A0A972A216213A00090987E /* MovieModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,7 +231,6 @@
 			children = (
 				4A530AD12114B4060049D41B /* Constants.swift */,
 				4A530AD32114B4060049D41B /* ErrorMessage.swift */,
-				4A530AD42114B4060049D41B /* FontName.swift */,
 				4A530AD72114B4060049D41B /* Strings.swift */,
 			);
 			path = Constants;
@@ -250,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				569E51772219F5BE0076CFBB /* CALayerExt.swift */,
-				4A530AE52114B4060049D41B /* UIColorExt.swift */,
 				4A530AEB2114B4060049D41B /* UITableViewExt.swift */,
 			);
 			path = Extensions;
@@ -331,7 +320,6 @@
 		57C23F151E12E760698A4FAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23BB0D5CC018B83735013715 /* Pods_Pixabay.framework */,
 				D2782AB4F69662BB68B32570 /* Pods_MoviesList.framework */,
 			);
 			name = Frameworks;
@@ -450,20 +438,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MoviesList/Pods-MoviesList-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
 				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,11 +458,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A530BD72114B4070049D41B /* Logger.swift in Sources */,
-				4A530BBD2114B4070049D41B /* FontName.swift in Sources */,
-				4A0A972B216213A00090987E /* PixabayModel.swift in Sources */,
+				4A0A972B216213A00090987E /* MovieModel.swift in Sources */,
 				4A0A9739216228930090987E /* MoviesController.swift in Sources */,
 				4A530BD82114B4070049D41B /* Utility.swift in Sources */,
-				4A530BCD2114B4070049D41B /* UIColorExt.swift in Sources */,
 				4A530BC02114B4070049D41B /* Strings.swift in Sources */,
 				4A530BD32114B4070049D41B /* UITableViewExt.swift in Sources */,
 				4A530BBA2114B4070049D41B /* Constants.swift in Sources */,

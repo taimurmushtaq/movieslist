@@ -1,17 +1,11 @@
 import UIKit
 
-import Realm
-import RealmSwift
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        //Perform migration if required
-        migrateRealm()
-        
         let controller = MoviesController(nibName: String(describing: MoviesController.self), bundle: nil)
         
         // Override point for customization after application launch.
@@ -19,23 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible();
         self.window?.rootViewController = BaseNavController(rootViewController: controller)
         
-        
         return true
-    }
-    
-    func migrateRealm() {
-        let version = 1
-        
-        let config = Realm.Configuration (
-            schemaVersion: UInt64(version),
-            migrationBlock: { migration, oldSchemaVersion in
-                if oldSchemaVersion < version {
-                    
-                }
-        })
-        //config.deleteRealmIfMigrationNeeded = true
-        // Make sure to set the default configuration
-        Realm.Configuration.defaultConfiguration = config
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

@@ -10,7 +10,7 @@ import UIKit
 
 enum Strings: String {
     //MARK: - Properties Text
-    case search = "search"
+    case Movies = "Movies"
     case noRecords = "no_records"
     
     

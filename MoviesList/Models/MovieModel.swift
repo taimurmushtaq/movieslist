@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 struct MovieModel: Codable {
     var id: String

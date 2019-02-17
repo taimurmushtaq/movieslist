@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SDWebImage
 
 protocol MoviesDeleagte: NSObjectProtocol {
     func openDetails(forModel model: MovieModel)
@@ -19,13 +18,9 @@ class MoviesAdapter: NSObject {
     
     weak var delegate: MoviesDeleagte?
     
-    var tableView: UITableView!
-    var fetchMore = false
-    var isLocalData = false
-    
+    var tableView: UITableView!    
     var modelsArray = [MovieModel]() {
         didSet {
-            fetchMore = false
             tableView?.reloadData()
         }
     }
@@ -76,10 +71,10 @@ extension MoviesAdapter: UITableViewDataSource {
 
 extension MoviesAdapter {
     func setDataOnCell(cell: MovieCell, model: MovieModel) {
-        cell.mTitleLabel.text = "\(model.title) (\(model.release_date))"
-        cell.mDescLabel.text = model.description
-        cell.mDirectorLabel.text = model.director
-        cell.mProducerLabel.text = model.producer
+        cell.titleLabel.text = "\(model.title) (\(model.release_date))"
+        cell.descLabel.text = model.description
+        cell.directorLabel.text = model.director
+        cell.producerLabel.text = model.producer
     }
 }
 
