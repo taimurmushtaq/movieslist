@@ -19,3 +19,4 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
+Pods
