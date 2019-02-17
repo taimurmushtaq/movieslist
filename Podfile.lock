@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Device (3.1.0)
+  - Reachability (3.2)
+  - Realm (3.7.5):
+    - Realm/Headers (= 3.7.5)
+  - Realm/Headers (3.7.5)
+  - RealmSwift (3.7.5):
+    - Realm (= 3.7.5)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
+
+DEPENDENCIES:
+  - Alamofire (= 4.7.3)
+  - Device (= 3.1.0)
+  - Reachability (= 3.2)
+  - RealmSwift (= 3.7.5)
+  - SDWebImage (= 4.4.3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Device
+    - Reachability
+    - Realm
+    - RealmSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Device: 8a21a61f5f938a12dadd44d82287996081b6919b
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  Realm: c286caf4dbf346ce24aad49ca76c7ce622d4a082
+  RealmSwift: 2a9281e37d6de55f66f76254d49d28aeb1b729e4
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+
+PODFILE CHECKSUM: efa5aedd4430babaa3e3fa3a6ff638b7f58d84bd
+
+COCOAPODS: 1.5.3

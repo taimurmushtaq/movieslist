@@ -1,0 +1,18 @@
+    //MARK: - Properties Text
+"search" = "Search";
+"no_records" = "No Record Found";
+
+"view_details_title" = "View Details";
+"view_details_msg" = "Do you want to see the details?";
+"cancel" = "Cancel";
+"show_details" = "Show Details";
+
+    //MARK: - Error Messages
+"no_network" = "Internet connection appears to be offline";
+"time_out" = "Connection timeout";
+"error_occured" = "An error occurred. Please try again";
+"bad_request" = "Bad request";
+"location_denied" = "Location Access Denied!";
+"location_denied_msg" = "Please enable location services from app settings";
+
+
