@@ -13,9 +13,6 @@ class MoviesController: BaseController {
     @IBOutlet weak var tableView: UITableView!
     var adapter: MoviesAdapter!
     
-    var successBlock: DefaultAPISuccessClosure!
-    var failureBlock: DefaultAPIFailureClosure!
-    
     //MARK: - ViewController Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +34,7 @@ extension MoviesController {
     func loadData(showLoader: Bool) {
         if showLoader { tableView.beginRefreshing() }
         
-        successBlock = { response in
+        let successBlock:DefaultAPISuccessClosure! = { response in
             self.tableView.endRefreshing()
             self.tableView.backgroundView = nil
             
@@ -54,7 +51,7 @@ extension MoviesController {
                 }
             }
         }
-        failureBlock = { error in
+        let failureBlock:DefaultAPIFailureClosure = { error in
             self.tableView.endRefreshing()
             
             // If there is no record, show empty message
@@ -63,7 +60,12 @@ extension MoviesController {
             }
         }
         
-        APIHandler.instance.getFilms(parameters: nil, success: successBlock, failure: failureBlock, errorPopup: true)
+        getFilms(success: successBlock, failure: failureBlock)
+    }
+    
+    func getFilms(success:@escaping DefaultAPISuccessClosure, failure:@escaping DefaultAPIFailureClosure) {
+        APIHandler.instance.getFilms(parameters: nil, success: success, failure: failure, errorPopup: true)
+        
     }
 }
 
@@ -84,9 +86,9 @@ extension MoviesController: MoviesDeleagte {
         let alert = UIAlertController.init(title: Strings.viewDetailsTitle.localized, message: Strings.viewDetailsMsg.localized, preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction.init(title: Strings.cancel.localized, style: .cancel, handler: nil))
         alert.addAction(UIAlertAction.init(title: Strings.showDetails.localized, style: .default, handler: { (action) in
-//            let controller = MovieDetailsController(nibName: String.init(describing: MovieDetailsController.self), bundle: .main)
-//            controller.model = model
-//            self.navigationController?.pushViewController(controller, animated: true)
+            let controller = MovieDetailsController(nibName: String.init(describing: MovieDetailsController.self), bundle: .main)
+            controller.movie = movie
+            self.navigationController?.pushViewController(controller, animated: true)
         }))
         self.present(alert, animated: true, completion: nil)
     }

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,22 +21,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="3kt-aw-uQD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_splash" translatesAutoresizingMaskIntoConstraints="NO" id="y3D-n7-gR6">
-                                <rect key="frame" x="107.66666666666669" y="364.33333333333331" width="161" height="84"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wIcon" translatesAutoresizingMaskIntoConstraints="NO" id="y3D-n7-gR6">
+                                <rect key="frame" x="87.666666666666686" y="306" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="y3D-n7-gR6" secondAttribute="height" multiplier="1:1" id="1zd-fO-49b"/>
+                                    <constraint firstAttribute="width" constant="200" id="MFr-wu-3RW"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3kt-aw-uQD" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2ds-DS-Ope"/>
                             <constraint firstItem="y3D-n7-gR6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2js-Td-isv"/>
-                            <constraint firstAttribute="bottom" secondItem="3kt-aw-uQD" secondAttribute="bottom" id="GuT-aN-DXi"/>
                             <constraint firstItem="y3D-n7-gR6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Kh8-du-AHs"/>
-                            <constraint firstAttribute="trailing" secondItem="3kt-aw-uQD" secondAttribute="trailing" id="QVe-Rs-GkG"/>
                             <constraint firstItem="y3D-n7-gR6" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="bW1-Vc-1Kb"/>
-                            <constraint firstItem="3kt-aw-uQD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="eiU-N0-t5B"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -54,7 +50,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="480" height="853"/>
-        <image name="logo_splash" width="161" height="84"/>
+        <image name="wIcon" width="1024" height="1024"/>
     </resources>
 </document>
