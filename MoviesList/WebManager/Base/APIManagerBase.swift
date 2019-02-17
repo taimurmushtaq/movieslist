@@ -11,9 +11,8 @@ class APIManagerBase: NSObject {
     
     override init() {
         let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 120
-        configuration.timeoutIntervalForResource = 120
-        configuration.requestCachePolicy = .returnCacheDataElseLoad
+        configuration.timeoutIntervalForRequest = TimeInterval(Constants.apiRequestTimeoutInterval)
+        configuration.timeoutIntervalForResource = TimeInterval(Constants.apiRequestTimeoutInterval)
         alamoFireManager = Alamofire.SessionManager(configuration: configuration)
     }
 }
@@ -37,8 +36,6 @@ extension APIManagerBase {
         }
         return nil
     }
-    
-    
 }
 
 extension APIManagerBase {
@@ -50,13 +47,13 @@ extension APIManagerBase {
         case -999, 4:
             break
         case -1001:
-            Utility.instance.showAlert(title: "Error!", message: ErrorMessage.network.timeOut)
+            Utility.instance.showAlert(title: Strings.error.localized, message: ErrorMessage.network.timeOut)
         case -1009:
-            Utility.instance.showAlert(title: "Error!", message: ErrorMessage.network.noNetwork)
+            Utility.instance.showAlert(title: Strings.error.localized, message: ErrorMessage.network.noNetwork)
         case -1005:
-            Utility.instance.showAlert(title: "Error!", message: ErrorMessage.network.noNetwork)
+            Utility.instance.showAlert(title: Strings.error.localized, message: ErrorMessage.network.noNetwork)
         default:
-            Utility.instance.showAlert(title: "Error!", message: (error as NSError).localizedDescription)
+            Utility.instance.showAlert(title: Strings.error.localized, message: (error as NSError).localizedDescription)
         }
     }
     
@@ -82,8 +79,6 @@ extension APIManagerBase {
             failure(error)
             return
         }
-        
-        print("URL: \(route.absoluteString)")
         
         let request = alamoFireManager.request(route, method: .get, encoding: JSONEncoding.prettyPrinted, headers: getHeaders())
         request.responseData {

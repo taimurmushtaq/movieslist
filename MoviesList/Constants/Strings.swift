@@ -12,6 +12,7 @@ enum Strings: String {
     //MARK: - Properties Text
     case Movies = "Movies"
     case noRecords = "no_records"
+    case error = "Error!"
     
     
     case viewDetailsTitle = "View Details"

@@ -9,6 +9,9 @@ struct Constants {
     /** BASE URL */
     static let baseURL = "https://ghibliapi.herokuapp.com"
     
+    /** API Request Timeout time */
+    static let apiRequestTimeoutInterval = 60
+    
     /** UIScreen.main.bounds.height */
     static let screenHeight: CGFloat = UIScreen.main.bounds.height
     
