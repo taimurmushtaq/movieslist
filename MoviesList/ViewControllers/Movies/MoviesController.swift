@@ -64,7 +64,7 @@ extension MoviesController {
     }
     
     func getFilms(success:@escaping DefaultAPISuccessClosure, failure:@escaping DefaultAPIFailureClosure) {
-        APIHandler.instance.getFilms(parameters: nil, success: success, failure: failure, errorPopup: true)
+        APIHandler.instance.getFilms(success: success, failure: failure, errorPopup: true)
         
     }
 }

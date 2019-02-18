@@ -42,10 +42,12 @@ class MovieDetailsController: BaseController {
 extension MovieDetailsController {
     @IBAction func didTapVehicleButton() {
         let controller = VehiclesController(nibName: String.init(describing: VehiclesController.self), bundle: .main)
+        controller.urlString = movie.vehicles.first
         self.navigationController?.pushViewController(controller, animated: true)
     }
     @IBAction func didTapLocationButton() {
         let controller = LocationsController(nibName: String.init(describing: LocationsController.self), bundle: .main)
+        controller.urlString = movie.locations.first
         self.navigationController?.pushViewController(controller, animated: true)
     }
 }

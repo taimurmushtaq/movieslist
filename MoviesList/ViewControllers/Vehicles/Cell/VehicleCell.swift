@@ -3,7 +3,7 @@
 //  MoviesList
 //
 //  Created by Taimur Mushtaq on 18/02/2019.
-//  Copyright © 2019 bolwala.com. All rights reserved.
+//  Copyright © 2019 Taimur Mushtaq. All rights reserved.
 //
 
 import UIKit

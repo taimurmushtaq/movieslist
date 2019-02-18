@@ -1,9 +1,9 @@
 //
 //  BaseNavController.swift
-//  Bolwala
+//  Taimur Mushtaq
 //
-//  Created by Bolwala on 04/07/2018.
-//  Copyright © 2018 Bolwala. All rights reserved.
+//  Created by Taimur Mushtaq on 04/07/2018.
+//  Copyright © 2018 Taimur Mushtaq. All rights reserved.
 //
 
 import UIKit

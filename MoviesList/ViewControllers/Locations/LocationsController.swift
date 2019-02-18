@@ -3,7 +3,7 @@
 //  MoviesList
 //
 //  Created by Taimur Mushtaq on 18/02/2019.
-//  Copyright © 2019 bolwala.com. All rights reserved.
+//  Copyright © 2019 Taimur Mushtaq. All rights reserved.
 //
 
 import UIKit
@@ -12,6 +12,7 @@ class LocationsController: BaseController {
     //MARK: - Properties
     @IBOutlet weak var tableView: UITableView!
     var adapter: LocationsAdapter!
+    var urlString: String?
     
     //MARK: - ViewController Methods
     override func viewDidLoad() {
@@ -64,7 +65,7 @@ extension LocationsController {
     }
     
     func getLocations(success:@escaping DefaultAPISuccessClosure, failure:@escaping DefaultAPIFailureClosure) {
-        APIHandler.instance.getLocations(parameters: nil, success: success, failure: failure, errorPopup: true)
+        APIHandler.instance.getLocations(urlString: urlString, success: success, failure: failure, errorPopup: true)
         
     }
 }
