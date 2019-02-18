@@ -11,7 +11,7 @@ This project contains the API and UI implementation of Films. APIs documentation
 * Vehicles screen
 * Sample unit tests
 
-### Architecture
+## Architecture
 
 "Model View Controller" approach is used in development of this project
 
@@ -27,15 +27,15 @@ A controller acts as an intermediary between one or more of an application’s v
 
 # Pods
 
-### Alamofire
+## Alamofire
 Alamofire is an HTTP networking library written in Swift
-### Reachibility
+## Reachibility
 This is a drop-in replacement for Apple's Reachability class. It is ARC-compatible, and it uses the new GCD methods to notify of network interface changes.
 
-##  Version
+#  Version
 Current Version ```1.0```
 
-## Developed By
+# Developed By
 Taimur Mushtaq.
 
   [url1]: <https://ghibliapi.herokuapp.com/>
