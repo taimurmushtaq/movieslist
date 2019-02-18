@@ -11,9 +11,9 @@ This project contains the API and UI implementation of Films. APIs documentation
 * Vehicles screen
 * Sample unit tests
 
-### Architecture Design Pattern
+### Architecture
 
-"Model View Controller" approch is used in development of this project
+"Model View Controller" approach is used in development of this project
 
 ### Model
 Model objects encapsulate the data specific to an application and define the logic and computation that manipulate and process that data.
