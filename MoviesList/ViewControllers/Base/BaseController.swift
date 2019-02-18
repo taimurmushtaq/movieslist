@@ -3,9 +3,6 @@ import UIKit
 
 class BaseController: UIViewController {
     //MARK: - Properties
-    @IBOutlet var topConstraint: NSLayoutConstraint?
-    @IBOutlet var bottomConstraint: NSLayoutConstraint?
-    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
     }
@@ -13,9 +10,6 @@ class BaseController: UIViewController {
     //MARK: - ViewController Methods
     override func loadView() {
         super.loadView()
-        //* Disabling auto insets for CollectionView / TableView / ScrollView *//
-        automaticallyAdjustsScrollViewInsets = false
-        
         //* Disabling swipe back gesture *//
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         
@@ -33,17 +27,6 @@ class BaseController: UIViewController {
         
         //* Update status bar style *//
         self.setNeedsStatusBarAppearanceUpdate()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        // For handling issues created by SafeArea in older versions
-        if #available(iOS 11.0, *) { }
-        else {
-            topConstraint?.constant = topLayoutGuide.length
-            bottomConstraint?.constant = bottomLayoutGuide.length
-        }
     }
 }
 

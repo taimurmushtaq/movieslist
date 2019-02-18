@@ -35,15 +35,40 @@ extension APIHandler {
 
 //MARK: - All APIs
 extension APIHandler {
-func getFilms(parameters: Parameters?,
-              success:@escaping DefaultAPISuccessClosure,
-              failure:@escaping DefaultAPIFailureClosure, errorPopup: Bool){
+    func getFilms(parameters: Parameters?,
+                  success:@escaping DefaultAPISuccessClosure,
+                  failure:@escaping DefaultAPIFailureClosure, errorPopup: Bool){
+        
+        //Cancel all other requests
+        apiManager.stopAllrequests()
+        
+        if let route = apiManager.getUrl(forRoute: Route.films.rawValue) {
+            apiManager.getRequestWith(route: route as URL, success: success, failure: failure, errorPopup: errorPopup)
+        }
+    }
     
-    //Cancel all other requests
-    apiManager.stopAllrequests()
+    func getVehicles(parameters: Parameters?,
+                  success:@escaping DefaultAPISuccessClosure,
+                  failure:@escaping DefaultAPIFailureClosure, errorPopup: Bool){
+        
+        //Cancel all other requests
+        apiManager.stopAllrequests()
+        
+        if let route = apiManager.getUrl(forRoute: Route.vehicles.rawValue) {
+            apiManager.getRequestWith(route: route as URL, success: success, failure: failure, errorPopup: errorPopup)
+        }
+    }
     
-    if let route = apiManager.getUrl(forRoute: Route.films.rawValue) {
-        apiManager.getRequestWith(route: route as URL, success: success, failure: failure, errorPopup: errorPopup)
+    func getLocations(parameters: Parameters?,
+                     success:@escaping DefaultAPISuccessClosure,
+                     failure:@escaping DefaultAPIFailureClosure, errorPopup: Bool){
+        
+        //Cancel all other requests
+        apiManager.stopAllrequests()
+        
+        if let route = apiManager.getUrl(forRoute: Route.locations.rawValue) {
+            apiManager.getRequestWith(route: route as URL, success: success, failure: failure, errorPopup: errorPopup)
+        }
     }
 }
-}
+

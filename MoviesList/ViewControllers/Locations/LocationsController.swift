@@ -1,36 +1,36 @@
 //
-//  MoviesController.swift
-//  Taimur Mushtaq
+//  LocationsController.swift
+//  MoviesList
 //
-//  Created by Taimur Mushtaq on 05/07/2018.
-//  Copyright © 2018 Taimur Mushtaq. All rights reserved.
+//  Created by Taimur Mushtaq on 18/02/2019.
+//  Copyright © 2019 bolwala.com. All rights reserved.
 //
 
 import UIKit
 
-class MoviesController: BaseController {
+class LocationsController: BaseController {
     //MARK: - Properties
     @IBOutlet weak var tableView: UITableView!
-    var adapter: MoviesAdapter!
+    var adapter: LocationsAdapter!
     
     //MARK: - ViewController Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = Strings.Movies.localized
+        addBackButton()
+        title = Strings.Locations.localized
         
         setTableView()
         
-        adapter = MoviesAdapter(withTableView: tableView)
-        adapter.delegate = self
-        
+        adapter = LocationsAdapter(withTableView: tableView)
+    
         loadData(showLoader: true)
     }
 }
 
 
 //MARK: - API Methods
-extension MoviesController {
+extension LocationsController {
     func loadData(showLoader: Bool) {
         if showLoader { tableView.beginRefreshing() }
         
@@ -42,7 +42,7 @@ extension MoviesController {
             
             //Update the records
             do {
-                let movies = try JSONDecoder().decode([MovieModel].self, from: response) //Decode JSON Response Data
+                let movies = try JSONDecoder().decode([LocationModel].self, from: response) //Decode JSON Response Data
                 self.adapter.modelsArray.append(contentsOf: movies)
             } catch {
                 // If there is no record, show empty message
@@ -60,36 +60,29 @@ extension MoviesController {
             }
         }
         
-        getFilms(success: successBlock, failure: failureBlock)
+        getLocations(success: successBlock, failure: failureBlock)
     }
     
-    func getFilms(success:@escaping DefaultAPISuccessClosure, failure:@escaping DefaultAPIFailureClosure) {
-        APIHandler.instance.getFilms(parameters: nil, success: success, failure: failure, errorPopup: true)
+    func getLocations(success:@escaping DefaultAPISuccessClosure, failure:@escaping DefaultAPIFailureClosure) {
+        APIHandler.instance.getLocations(parameters: nil, success: success, failure: failure, errorPopup: true)
         
     }
 }
 
 //MARK: - Utility Methods
-extension MoviesController: MoviesDeleagte {
+extension LocationsController {
     func setTableView() {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight =  150
         tableView.addRefreshControl(self, action: #selector(refreshData))
-        tableView.registerCell(ofType: MovieCell.self, withReuseIdentifier: MovieCell.identifier)
+        tableView.registerCell(ofType: LocationCell.self, withReuseIdentifier: LocationCell.identifier)
     }
     
     @objc func refreshData() {
         loadData(showLoader: false)
     }
     
-    func openDetails(forModel model: MovieModel) {
-        let controller = MovieDetailsController(nibName: String.init(describing: MovieDetailsController.self), bundle: .main)
-        controller.movie = model
-        self.navigationController?.pushViewController(controller, animated: true)
-    }
-    
     func showEmptyTableView(message: String) {
         Utility.instance.emptyTableViewMessage(message: message, tableView: tableView)
     }
 }
-

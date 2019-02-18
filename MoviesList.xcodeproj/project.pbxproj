@@ -48,6 +48,18 @@
 		56FEC7DE221A11800033A6F9 /* MoviesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC7DD221A11800033A6F9 /* MoviesListTests.swift */; };
 		56FEC7E7221A1B120033A6F9 /* MovieDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC7E5221A1B120033A6F9 /* MovieDetailsController.swift */; };
 		56FEC7E8221A1B120033A6F9 /* MovieDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56FEC7E6221A1B120033A6F9 /* MovieDetailsController.xib */; };
+		56FEC7EE221A26EF0033A6F9 /* VehiclesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC7EC221A26EF0033A6F9 /* VehiclesController.swift */; };
+		56FEC7EF221A26EF0033A6F9 /* VehiclesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56FEC7ED221A26EF0033A6F9 /* VehiclesController.xib */; };
+		56FEC7F7221A27E00033A6F9 /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC7F5221A27E00033A6F9 /* VehicleCell.swift */; };
+		56FEC7F8221A27E00033A6F9 /* VehicleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56FEC7F6221A27E00033A6F9 /* VehicleCell.xib */; };
+		56FEC7FE221A294D0033A6F9 /* VehiclesAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC7FD221A294D0033A6F9 /* VehiclesAdapter.swift */; };
+		56FEC801221A29A90033A6F9 /* VehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC7FF221A29A80033A6F9 /* VehicleModel.swift */; };
+		56FEC802221A29A90033A6F9 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC800221A29A80033A6F9 /* LocationModel.swift */; };
+		56FEC80A221A2C6B0033A6F9 /* LocationsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC804221A2C6B0033A6F9 /* LocationsAdapter.swift */; };
+		56FEC80B221A2C6B0033A6F9 /* LocationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC805221A2C6B0033A6F9 /* LocationsController.swift */; };
+		56FEC80C221A2C6B0033A6F9 /* LocationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56FEC806221A2C6B0033A6F9 /* LocationsController.xib */; };
+		56FEC80D221A2C6B0033A6F9 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC808221A2C6B0033A6F9 /* LocationCell.swift */; };
+		56FEC80E221A2C6B0033A6F9 /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56FEC809221A2C6B0033A6F9 /* LocationCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +120,18 @@
 		56FEC7DF221A11800033A6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56FEC7E5221A1B120033A6F9 /* MovieDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsController.swift; sourceTree = "<group>"; };
 		56FEC7E6221A1B120033A6F9 /* MovieDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailsController.xib; sourceTree = "<group>"; };
+		56FEC7EC221A26EF0033A6F9 /* VehiclesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesController.swift; sourceTree = "<group>"; };
+		56FEC7ED221A26EF0033A6F9 /* VehiclesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehiclesController.xib; sourceTree = "<group>"; };
+		56FEC7F5221A27E00033A6F9 /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		56FEC7F6221A27E00033A6F9 /* VehicleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleCell.xib; sourceTree = "<group>"; };
+		56FEC7FD221A294D0033A6F9 /* VehiclesAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesAdapter.swift; sourceTree = "<group>"; };
+		56FEC7FF221A29A80033A6F9 /* VehicleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleModel.swift; sourceTree = "<group>"; };
+		56FEC800221A29A80033A6F9 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		56FEC804221A2C6B0033A6F9 /* LocationsAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsAdapter.swift; sourceTree = "<group>"; };
+		56FEC805221A2C6B0033A6F9 /* LocationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsController.swift; sourceTree = "<group>"; };
+		56FEC806221A2C6B0033A6F9 /* LocationsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationsController.xib; sourceTree = "<group>"; };
+		56FEC808221A2C6B0033A6F9 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		56FEC809221A2C6B0033A6F9 /* LocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
 		65589E1B976A525948019A1E /* Pods-MoviesList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesList.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesList/Pods-MoviesList.release.xcconfig"; sourceTree = "<group>"; };
 		C26B21A5FEA75C5A6AFD2D7D /* Pods-MoviesList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesList/Pods-MoviesList.debug.xcconfig"; sourceTree = "<group>"; };
 		D2782AB4F69662BB68B32570 /* Pods_MoviesList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +234,8 @@
 		4A5309AB2114B4060049D41B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				56FEC800221A29A80033A6F9 /* LocationModel.swift */,
+				56FEC7FF221A29A80033A6F9 /* VehicleModel.swift */,
 				4A0A972A216213A00090987E /* MovieModel.swift */,
 			);
 			path = Models;
@@ -220,8 +246,9 @@
 			children = (
 				4A5309B92114B4060049D41B /* Base */,
 				4A0A972E216228930090987E /* Movies */,
-				56FEC7E5221A1B120033A6F9 /* MovieDetailsController.swift */,
-				56FEC7E6221A1B120033A6F9 /* MovieDetailsController.xib */,
+				56FEC7E9221A217F0033A6F9 /* MovieDetails */,
+				56FEC7EB221A26D70033A6F9 /* Vehicles */,
+				56FEC7EA221A26C30033A6F9 /* Locations */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -355,6 +382,71 @@
 			path = MoviesListTests;
 			sourceTree = "<group>";
 		};
+		56FEC7E9221A217F0033A6F9 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				56FEC7E5221A1B120033A6F9 /* MovieDetailsController.swift */,
+				56FEC7E6221A1B120033A6F9 /* MovieDetailsController.xib */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		56FEC7EA221A26C30033A6F9 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				56FEC803221A2C6B0033A6F9 /* Adapter */,
+				56FEC807221A2C6B0033A6F9 /* Cell */,
+				56FEC805221A2C6B0033A6F9 /* LocationsController.swift */,
+				56FEC806221A2C6B0033A6F9 /* LocationsController.xib */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		56FEC7EB221A26D70033A6F9 /* Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				56FEC7FC221A294D0033A6F9 /* Adapter */,
+				56FEC7F4221A27C90033A6F9 /* Cell */,
+				56FEC7EC221A26EF0033A6F9 /* VehiclesController.swift */,
+				56FEC7ED221A26EF0033A6F9 /* VehiclesController.xib */,
+			);
+			path = Vehicles;
+			sourceTree = "<group>";
+		};
+		56FEC7F4221A27C90033A6F9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				56FEC7F5221A27E00033A6F9 /* VehicleCell.swift */,
+				56FEC7F6221A27E00033A6F9 /* VehicleCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		56FEC7FC221A294D0033A6F9 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				56FEC7FD221A294D0033A6F9 /* VehiclesAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		56FEC803221A2C6B0033A6F9 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				56FEC804221A2C6B0033A6F9 /* LocationsAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		56FEC807221A2C6B0033A6F9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				56FEC808221A2C6B0033A6F9 /* LocationCell.swift */,
+				56FEC809221A2C6B0033A6F9 /* LocationCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		57C23F151E12E760698A4FAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,8 +543,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				567A861D2160AB26000F946B /* Muli-ExtraLight.ttf in Resources */,
+				56FEC80E221A2C6B0033A6F9 /* LocationCell.xib in Resources */,
 				56FEC7E8221A1B120033A6F9 /* MovieDetailsController.xib in Resources */,
 				567A86192160AB26000F946B /* Muli-SemiBoldItalic.ttf in Resources */,
+				56FEC7F8221A27E00033A6F9 /* VehicleCell.xib in Resources */,
 				567A86162160AB26000F946B /* Muli-ExtraBoldItalic.ttf in Resources */,
 				567A86122160AB26000F946B /* Muli-Bold.ttf in Resources */,
 				4A0A973A216228930090987E /* MoviesController.xib in Resources */,
@@ -464,6 +558,8 @@
 				567A861C2160AB26000F946B /* Muli-ExtraBold.ttf in Resources */,
 				4A530BB72114B4070049D41B /* Assets.xcassets in Resources */,
 				567A86182160AB26000F946B /* Muli-SemiBold.ttf in Resources */,
+				56FEC7EF221A26EF0033A6F9 /* VehiclesController.xib in Resources */,
+				56FEC80C221A2C6B0033A6F9 /* LocationsController.xib in Resources */,
 				567A86142160AB26000F946B /* Muli-LightItalic.ttf in Resources */,
 				4A530BA42114B4070049D41B /* EmptyTableViewBackgroundView.xib in Resources */,
 				567A86152160AB26000F946B /* Muli-ExtraLightItalic.ttf in Resources */,
@@ -532,20 +628,28 @@
 				4A0A9739216228930090987E /* MoviesController.swift in Sources */,
 				4A530BD82114B4070049D41B /* Utility.swift in Sources */,
 				4A530BC02114B4070049D41B /* Strings.swift in Sources */,
+				56FEC7F7221A27E00033A6F9 /* VehicleCell.swift in Sources */,
 				4A530BD32114B4070049D41B /* UITableViewExt.swift in Sources */,
 				4A530BBA2114B4070049D41B /* Constants.swift in Sources */,
+				56FEC80A221A2C6B0033A6F9 /* LocationsAdapter.swift in Sources */,
 				4A0A9737216228930090987E /* MovieCell.swift in Sources */,
 				4A530BD92114B4070049D41B /* APIHandler.swift in Sources */,
+				56FEC802221A29A90033A6F9 /* LocationModel.swift in Sources */,
 				569E51782219F5BF0076CFBB /* CALayerExt.swift in Sources */,
+				56FEC7EE221A26EF0033A6F9 /* VehiclesController.swift in Sources */,
 				4A530BBC2114B4070049D41B /* ErrorMessage.swift in Sources */,
 				4A530C002114B46A0049D41B /* CEReachabilityManager.m in Sources */,
+				56FEC80D221A2C6B0033A6F9 /* LocationCell.swift in Sources */,
 				4A530BDE2114B4070049D41B /* RouteUrls.swift in Sources */,
 				4A530B082114B4070049D41B /* BaseController.swift in Sources */,
+				56FEC801221A29A90033A6F9 /* VehicleModel.swift in Sources */,
 				4A530BDD2114B4070049D41B /* APIManagerBase.swift in Sources */,
 				4A530BA32114B4070049D41B /* EmptyTableViewBackgroundView.swift in Sources */,
 				4A0A97292162111E0090987E /* BaseNavController.swift in Sources */,
+				56FEC7FE221A294D0033A6F9 /* VehiclesAdapter.swift in Sources */,
 				56FEC7E7221A1B120033A6F9 /* MovieDetailsController.swift in Sources */,
 				4A0A9736216228930090987E /* MoviesAdapter.swift in Sources */,
+				56FEC80B221A2C6B0033A6F9 /* LocationsController.swift in Sources */,
 				4A5307462114ADE40049D41B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -711,7 +815,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = KF3PAM45YY;
 				INFOPLIST_FILE = "$(SRCROOT)/MoviesList/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.movieslist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -733,7 +837,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = KF3PAM45YY;
 				INFOPLIST_FILE = "$(SRCROOT)/MoviesList/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.movieslist;
 				PRODUCT_NAME = "$(TARGET_NAME)";

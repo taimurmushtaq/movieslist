@@ -11,6 +11,9 @@ import UIKit
 enum Strings: String {
     //MARK: - Properties Text
     case Movies = "Movies"
+    case Vehicles = "Vehicles"
+    case Locations = "Locations"
+    case MovieDetail = "Movie Detail"
     case noRecords = "no_records"
     case error = "Error!"
     

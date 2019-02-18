@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailsController" customModule="MoviesList" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="wfh-vW-sNw" id="uDJ-Na-ldG"/>
+                <outlet property="descLabel" destination="vso-ad-OGg" id="3nx-Mh-GfC"/>
+                <outlet property="directorLabel" destination="33e-AZ-Hk8" id="ptk-j9-yFS"/>
+                <outlet property="producerLabel" destination="3sR-ik-tQQ" id="Ecy-UY-J3z"/>
+                <outlet property="titleLabel" destination="EZ5-tN-vo0" id="WdK-1K-pPm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ljw-Jw-gie">
+                    <rect key="frame" x="8" y="28" width="359" height="631"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfh-vW-sNw">
+                            <rect key="frame" x="0.0" y="0.0" width="359" height="668"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jGI-eo-ZtB">
+                                    <rect key="frame" x="8" y="8" width="343" height="652"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Movie Title Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZ5-tN-vo0">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="30.5"/>
+                                            <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nS-Ww-zsr">
+                                            <rect key="frame" x="0.0" y="38.5" width="343" height="50"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2r-9K-u5i">
+                                                    <rect key="frame" x="0.0" y="0.0" width="167.5" height="50"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqh-Qe-DgZ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="167.5" height="32"/>
+                                                            <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Director Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33e-AZ-Hk8">
+                                                            <rect key="frame" x="0.0" y="32" width="167.5" height="18"/>
+                                                            <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="33e-AZ-Hk8" secondAttribute="trailing" id="7jb-nO-hjS"/>
+                                                        <constraint firstItem="33e-AZ-Hk8" firstAttribute="top" secondItem="wqh-Qe-DgZ" secondAttribute="bottom" id="HQ2-Jh-QnV"/>
+                                                        <constraint firstAttribute="bottom" secondItem="33e-AZ-Hk8" secondAttribute="bottom" id="QCM-ex-vJK"/>
+                                                        <constraint firstItem="wqh-Qe-DgZ" firstAttribute="leading" secondItem="a2r-9K-u5i" secondAttribute="leading" id="Usg-7c-TE8"/>
+                                                        <constraint firstAttribute="trailing" secondItem="wqh-Qe-DgZ" secondAttribute="trailing" id="cuX-eM-FEz"/>
+                                                        <constraint firstItem="wqh-Qe-DgZ" firstAttribute="top" secondItem="a2r-9K-u5i" secondAttribute="top" id="gqU-ow-Kkr"/>
+                                                        <constraint firstItem="33e-AZ-Hk8" firstAttribute="leading" secondItem="a2r-9K-u5i" secondAttribute="leading" id="zqz-hO-UFA"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nEH-v9-vIr">
+                                                    <rect key="frame" x="175.5" y="0.0" width="167.5" height="50"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsA-1b-noO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="167.5" height="18"/>
+                                                            <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Producer Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sR-ik-tQQ">
+                                                            <rect key="frame" x="0.0" y="18" width="167.5" height="32"/>
+                                                            <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="3sR-ik-tQQ" firstAttribute="top" secondItem="hsA-1b-noO" secondAttribute="bottom" id="7VD-xt-hig"/>
+                                                        <constraint firstItem="hsA-1b-noO" firstAttribute="top" secondItem="nEH-v9-vIr" secondAttribute="top" id="9gz-nV-c9g"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hsA-1b-noO" secondAttribute="trailing" id="BDh-6f-nXC"/>
+                                                        <constraint firstItem="3sR-ik-tQQ" firstAttribute="leading" secondItem="nEH-v9-vIr" secondAttribute="leading" id="LZ3-te-R7i"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3sR-ik-tQQ" secondAttribute="trailing" id="RD3-yM-toK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="3sR-ik-tQQ" secondAttribute="bottom" id="TIL-OT-30i"/>
+                                                        <constraint firstItem="hsA-1b-noO" firstAttribute="leading" secondItem="nEH-v9-vIr" secondAttribute="leading" id="gWc-Zd-vjL"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="nEH-v9-vIr" secondAttribute="bottom" id="4kf-Bw-8Xw"/>
+                                                <constraint firstAttribute="trailing" secondItem="nEH-v9-vIr" secondAttribute="trailing" id="E5Q-lw-hGG"/>
+                                                <constraint firstItem="nEH-v9-vIr" firstAttribute="top" secondItem="1nS-Ww-zsr" secondAttribute="top" id="J06-60-itO"/>
+                                                <constraint firstItem="a2r-9K-u5i" firstAttribute="leading" secondItem="1nS-Ww-zsr" secondAttribute="leading" id="LaW-AN-txZ"/>
+                                                <constraint firstItem="nEH-v9-vIr" firstAttribute="width" secondItem="a2r-9K-u5i" secondAttribute="width" id="Ynw-Kj-109"/>
+                                                <constraint firstItem="a2r-9K-u5i" firstAttribute="top" secondItem="1nS-Ww-zsr" secondAttribute="top" id="kRZ-a8-lBx"/>
+                                                <constraint firstAttribute="bottom" secondItem="a2r-9K-u5i" secondAttribute="bottom" id="qnM-Jq-g8b"/>
+                                                <constraint firstItem="nEH-v9-vIr" firstAttribute="leading" secondItem="a2r-9K-u5i" secondAttribute="trailing" constant="8" id="vBp-VY-K3T"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGe-GS-CGW">
+                                            <rect key="frame" x="0.0" y="96.5" width="343" height="507.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqi-Os-Py5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="18"/>
+                                                    <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Desc Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vso-ad-OGg">
+                                                    <rect key="frame" x="0.0" y="18" width="343" height="489.5"/>
+                                                    <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Nqi-Os-Py5" firstAttribute="leading" secondItem="mGe-GS-CGW" secondAttribute="leading" id="6gd-dV-WVj"/>
+                                                <constraint firstItem="Nqi-Os-Py5" firstAttribute="top" secondItem="mGe-GS-CGW" secondAttribute="top" id="DLg-RJ-hsF"/>
+                                                <constraint firstItem="vso-ad-OGg" firstAttribute="leading" secondItem="mGe-GS-CGW" secondAttribute="leading" id="Mf9-w6-mWQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nqi-Os-Py5" secondAttribute="trailing" id="TbN-fq-hFz"/>
+                                                <constraint firstAttribute="bottom" secondItem="vso-ad-OGg" secondAttribute="bottom" id="ppP-6r-Uzn"/>
+                                                <constraint firstAttribute="trailing" secondItem="vso-ad-OGg" secondAttribute="trailing" id="ue3-w0-HRg"/>
+                                                <constraint firstItem="vso-ad-OGg" firstAttribute="top" secondItem="Nqi-Os-Py5" secondAttribute="bottom" id="vqV-H9-9OG"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xyg-Zz-o5g">
+                                            <rect key="frame" x="0.0" y="612" width="343" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vti-Dx-zhr">
+                                                    <rect key="frame" x="0.0" y="5" width="171.5" height="30"/>
+                                                    <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="18"/>
+                                                    <state key="normal" title="Locations" image="location">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="didTapLocationButton" destination="-1" eventType="touchUpInside" id="txs-1d-nqJ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4D0-Hq-G5I">
+                                                    <rect key="frame" x="171.5" y="5" width="171.5" height="30"/>
+                                                    <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="18"/>
+                                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal" title="Vehicles" image="vehicle">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="didTapVehicleButton" destination="-1" eventType="touchUpInside" id="b5F-n0-hHZ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="n88-w1-cfJ"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="jGI-eo-ZtB" firstAttribute="leading" secondItem="wfh-vW-sNw" secondAttribute="leading" constant="8" id="Dsf-BW-hk5"/>
+                                <constraint firstItem="jGI-eo-ZtB" firstAttribute="top" secondItem="wfh-vW-sNw" secondAttribute="top" constant="8" id="E7Q-dK-baJ"/>
+                                <constraint firstAttribute="bottom" secondItem="jGI-eo-ZtB" secondAttribute="bottom" constant="8" id="TSK-cV-dsA"/>
+                                <constraint firstAttribute="trailing" secondItem="jGI-eo-ZtB" secondAttribute="trailing" constant="8" id="buw-FR-DKq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="wfh-vW-sNw" firstAttribute="width" secondItem="Ljw-Jw-gie" secondAttribute="width" id="K8G-CL-6JS"/>
+                        <constraint firstItem="wfh-vW-sNw" firstAttribute="leading" secondItem="Ljw-Jw-gie" secondAttribute="leading" id="UPx-fC-Mle"/>
+                        <constraint firstItem="wfh-vW-sNw" firstAttribute="top" secondItem="Ljw-Jw-gie" secondAttribute="top" id="YOh-BP-bAa"/>
+                        <constraint firstAttribute="bottom" secondItem="wfh-vW-sNw" secondAttribute="bottom" id="cNu-8k-cFz"/>
+                        <constraint firstAttribute="trailing" secondItem="wfh-vW-sNw" secondAttribute="trailing" id="diw-2e-fNV"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ljw-Jw-gie" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="JLn-70-x4R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ljw-Jw-gie" secondAttribute="bottom" constant="8" id="cpp-4M-6mG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ljw-Jw-gie" secondAttribute="trailing" constant="8" id="qFT-dN-Ygp"/>
+                <constraint firstItem="Ljw-Jw-gie" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="qfX-Xs-Pfb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="41" y="79"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="location" width="30" height="30"/>
+        <image name="vehicle" width="30" height="30"/>
+    </resources>
+</document>

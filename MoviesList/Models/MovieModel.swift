@@ -3,7 +3,7 @@
 //  Taimur Mushtaq
 //
 //  Created by taimurmushtaq on 01/10/2018.
-//  Copyright © 2018 bolwala.com. All rights reserved.
+//  Copyright © 2018 Taimur Mushtaq. All rights reserved.
 //
 
 import UIKit
