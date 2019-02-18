@@ -60,6 +60,8 @@
 		56FEC80C221A2C6B0033A6F9 /* LocationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56FEC806221A2C6B0033A6F9 /* LocationsController.xib */; };
 		56FEC80D221A2C6B0033A6F9 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC808221A2C6B0033A6F9 /* LocationCell.swift */; };
 		56FEC80E221A2C6B0033A6F9 /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56FEC809221A2C6B0033A6F9 /* LocationCell.xib */; };
+		56FEC811221A2EE50033A6F9 /* VehiclesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC80F221A2EE50033A6F9 /* VehiclesListTests.swift */; };
+		56FEC812221A2EE50033A6F9 /* LocationsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FEC810221A2EE50033A6F9 /* LocationsListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +134,8 @@
 		56FEC806221A2C6B0033A6F9 /* LocationsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationsController.xib; sourceTree = "<group>"; };
 		56FEC808221A2C6B0033A6F9 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		56FEC809221A2C6B0033A6F9 /* LocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
+		56FEC80F221A2EE50033A6F9 /* VehiclesListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesListTests.swift; sourceTree = "<group>"; };
+		56FEC810221A2EE50033A6F9 /* LocationsListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListTests.swift; sourceTree = "<group>"; };
 		65589E1B976A525948019A1E /* Pods-MoviesList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesList.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesList/Pods-MoviesList.release.xcconfig"; sourceTree = "<group>"; };
 		C26B21A5FEA75C5A6AFD2D7D /* Pods-MoviesList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesList/Pods-MoviesList.debug.xcconfig"; sourceTree = "<group>"; };
 		D2782AB4F69662BB68B32570 /* Pods_MoviesList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -377,6 +381,8 @@
 			isa = PBXGroup;
 			children = (
 				56FEC7DD221A11800033A6F9 /* MoviesListTests.swift */,
+				56FEC810221A2EE50033A6F9 /* LocationsListTests.swift */,
+				56FEC80F221A2EE50033A6F9 /* VehiclesListTests.swift */,
 				56FEC7DF221A11800033A6F9 /* Info.plist */,
 			);
 			path = MoviesListTests;
@@ -658,7 +664,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56FEC811221A2EE50033A6F9 /* VehiclesListTests.swift in Sources */,
 				56FEC7DE221A11800033A6F9 /* MoviesListTests.swift in Sources */,
+				56FEC812221A2EE50033A6F9 /* LocationsListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
