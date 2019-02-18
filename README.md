@@ -1,6 +1,6 @@
 # iOS Films List Task
 
-This Android project FIlms api intergration and a sample UI, APIs documentation is here [Document Link][url1]
+This project contains the API and UI implementation of Films. APIs documentation is here [Document Link][url1]
 
 
 ## Features
